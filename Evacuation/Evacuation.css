@@ -164,6 +164,10 @@ main {
 .form_wrap input[type="text"]:focus {
   border-color: #ebd0ce;
 }
+.form_wrap .input_grp{
+	display: flex;
+	justify-content: space-between;
+}
 
 .form {
   background: #38e1b165;

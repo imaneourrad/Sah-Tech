@@ -36,37 +36,35 @@
         </nav>
 
         <main>
-
-
-            <label class="titre" for="form1">
-                <h1>Certificat medicale</h1>
-            </label>
             <form class="form1" id="form1">
+                <label class="titre" for="form1">
+                    <h1>Certificat medicale</h1>
+                </label>
+                <br>
                 <div class="form_wrap">
  
                      
+                    <div class="input_grp">
                         <div class="input_wrap">
                           <label for="nom">Nom</label>
                           <input type="text" id="nom" name="nom">
                         </div>
-
                         <div class="input_wrap">
                           <label for="Prénom">Prénom</label>
-                          <input type="text" id="Prénom" name="Prénom">
+                          <input type="text" id="Prénom" name="prénom">
                         </div>
-                      
-                     
-                      <div class="input_wrap">
-                        <label for="age">Age</label><br>
-                        <input type="number" id="age" name="age" style="padding: 10px; width: 530px;">
                       </div>
-
-
-
+                     <br> 
+                     <div class="input_grp">
                       <div class="input_wrap">
-                        <label for="nom_medecin">Nom de Medecin</label>
-                        <input type="text" id="nom_medecin" name="nom_medecin">
+                        <label for="age">Age</label>
+                        <input type="text" id="age" name="age">
                       </div>
+                      <div class="input_wrap">
+                        <label for="nom_medecin">Dr</label>
+                        <input type="text" id="nom_medecin" name="nom_medecin" style="padding: 10px;">
+                      </div>
+                     </div>
 
                     <div class="input_wrap">
                        
@@ -81,6 +79,30 @@
 
                 </div>
             </form>
+            <script>
+                const inputs = document.querySelectorAll(".input");
+    
+    
+                 function addcl(){
+                    let parent = this.parentNode.parentNode;
+                    parent.classList.add("focus");
+                                  }
+    
+                function remcl(){
+                    let parent = this.parentNode.parentNode;
+                    if(this.value == ""){
+                      parent.classList.remove("focus");
+                                        }
+                                  }
+    
+    
+                inputs.forEach(input => {
+                       input.addEventListener("focus", addcl);
+                       input.addEventListener("blur", remcl);
+                                  });
+    
+            </script>
+            
 
         </main>
 

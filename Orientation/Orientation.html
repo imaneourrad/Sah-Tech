@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="Certificat medical.css" />
+    <link rel="stylesheet" href="Orientation.css" />
 
-    <title>Sah-Tech | Certificat medicale</title>
+    <title>Sah-Tech | Orientation</title>
 </head>
 
 <body id="body">
@@ -45,22 +45,24 @@
 
 
             <label class="titre" for="form1">
-                <h1>Certificat medicale</h1>
+                <h1>Orientation</h1>
             </label>
             <form class="form1" id="form1">
                 <div class="form_wrap">
- 
-                     
+
+
+
+
+                    <div class="input_grp">
                         <div class="input_wrap">
                           <label for="nom">Nom</label>
                           <input type="text" id="nom" name="nom">
                         </div>
-
                         <div class="input_wrap">
                           <label for="Prénom">Prénom</label>
                           <input type="text" id="Prénom" name="Prénom">
                         </div>
-                      
+                      </div>
                      
                       <div class="input_wrap">
                         <label for="age">Age</label><br>
@@ -73,12 +75,20 @@
                         <label for="nom_medecin">Nom de Medecin</label>
                         <input type="text" id="nom_medecin" name="nom_medecin">
                       </div>
+                     
+                      
 
-                    <div class="input_wrap">
-                       
-                        <textarea class="txt_certificat medical" name="message" rows="15" cols="68" placeholder="Description."
-                         style="margin-top: 25px;" ></textarea>
+
+                      <div class="input_wrap">
+                        <label for="Orienter">Orienter vers</label><br>
+                        <input type="text" name="Orienter" id="Evacuer" placeholder="Adresse de l'hôpital."style="padding: 10px; width: 530px;" />
                     </div>
+
+                    
+
+
+
+
 
                     <div >
                         <button class="btn" style="margin-left: 100px">Enregistrer</button>

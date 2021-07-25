@@ -128,7 +128,7 @@ main {
 }
 
 .main__greeting > h1 {
-  font-size: 24px;
+  font-size: 17px;
   color: #2e4a66;
   margin-bottom: 5px;
 }
@@ -148,17 +148,23 @@ main {
   justify-content: center;
   align-items: center;
   margin-left: 0px;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 170px;
   margin-bottom: 90px;
 }
-
+.form1 h1{
+  font-size: 40px;
+}
 .form_wrap input[type="text"] {
-  width: 97%;
+  width: 50%;
   border-radius: 3px;
   border: 1px solid #373738;
   padding: 10px;
   outline: none;
+}
+.form_wrap .input_grp{
+	display: flex;
+	justify-content: space-between;
 }
 
 .form_wrap input[type="text"]:focus {
